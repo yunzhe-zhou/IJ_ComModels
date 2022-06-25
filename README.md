@@ -28,14 +28,7 @@ theoretical consistency of the Infinitesimal Jackknife covariance estimate.
 
 ## File Overview
 - `data/`: This folder contains the Beijing Housing dataset (https://www.kaggle.com/datasets/ruiqurm/lianjia) and the results of experiments will be also stored in this folder.
-  - 'inference.py' is used for data generating and supervised and generative adversarial learning.
-  - `infer_utils.py` contains the utility functions to implement hypothesis testing.
-  - `main.py` is an entrance to be used in command line. We can type `python main.py` to reproduce results of DRT and Sugar.
-  - `main_lrt.R` is to implement the methods in ["Likelihood ratio tests for a large directed acyclic graph"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7508303/)
-  - `nonlinear_learning.py` is used for structural learning of the graphs. (Refers to https://github.com/xunzheng/notears)
-  - `plot.py` contains the functions to load test results and draw plots.
-- `data/`: This folder where the output results and the dataset should be put.
-  - 'module_name.csv' records the information of the electrode names. 
+- `sklearn/`: This folder is used to install the revised version of sklearn by Zhengze Zhou (https://github.com/ZhengzeZhou/scikit-learn) for our experiments.
 
 ## Workflow
 
