@@ -15,16 +15,19 @@ theoretical consistency of the Infinitesimal Jackknife covariance estimate.
 
 ## Requirement
 
-+ Python 3.6
-    + numpy 1.18.5
-    + scipy 1.5.4
-    + torch 1.0.0
-    + tensorflow 2.1.3
-    + tensorflow-probability 0.8.0
-    + sklearn 0.23.2
++ Python 3.7
+    + numpy 1.21.5
+    + scipy 1.7.3
+    + tensorflow 2.4.0
+    + keras 2.3.1
+    + xgboost 1.5.1
+    + tqdm 4.64.0
+    + cython 0.29.30
+    + matplotlib 3.5.2
+    + seaborn 0.11.2
 
 ## File Overview
-- `src/`: This folder contains all python codes used in numerical experiments and real data analysis.
+- `data/`: This folder contains the Beijing Housing dataset (https://www.kaggle.com/datasets/ruiqurm/lianjia) and the results of experiments will be also stored in this folder.
   - 'inference.py' is used for data generating and supervised and generative adversarial learning.
   - `infer_utils.py` contains the utility functions to implement hypothesis testing.
   - `main.py` is an entrance to be used in command line. We can type `python main.py` to reproduce results of DRT and Sugar.
