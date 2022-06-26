@@ -29,12 +29,24 @@ theoretical consistency of the Infinitesimal Jackknife covariance estimate.
 ## File Overview
 - `data/`: This folder contains the Beijing Housing dataset (https://www.kaggle.com/datasets/ruiqurm/lianjia) and the results of experiments will be also stored in this folder.
 - `sklearn/`: This folder is used to install the revised version of sklearn by Zhengze Zhou (https://github.com/ZhengzeZhou/scikit-learn) for our experiments.
+- `nn_jackknife_utils.py` and 'nn_utils.py': Both files are the utils functions for calculating the IJ of neural networks.
+- `utils.py`: This is the utils function for model comparisions, calculating IJ of other machine learning models and preprocessing real dataset.
+- `run_nn.py`: Implements the experiments of IJ for neural networks in simulations.
+- `run_real.py`: Implements the experiments for the real data analysis.
+- `run_comp.py`: Implements the experiments of IJ for all the other machine learning models in simulations.
+- `plot_real_result.ipynb`: Generates plots for the real data anaysis.
+- `plot_sim_result.ipynb`: Generates plots for the simulations.
 
 ## Workflow
 
 Follow the steps below in order to reproduce the results of this paper:
--  Put the real dataset "HCP_low.npy" and "HCP_high.npy" into the "data" folder. (Email the authors to
-request the data access.) 
-- `python main.py`
-- `Rscript main_lrt.R`
-- `python plot.py`
+- Download the required packages according to the "Requirement" section.
+- Use the following commands to install the revised version of sklearn package:
+    + `cd sklean`
+    + `chmod +x setup.py`
+    + `python setup.py install`
+- Use `cd ..` to navigage back to the main folder and run the following commands:
+    + `python run_nn.py`
+    + `python run_real.py`
+    + `python run_comp.py`
+- Run jupyter notebooks `plot_real_result.ipynb` and `plot_sim_result.ipynb` to reproduce the plots in this paper.
