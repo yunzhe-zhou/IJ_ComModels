@@ -13,7 +13,7 @@ models like random forests and M-estimators. We also use neural networks and XGB
 the efficacy of the test through extensive simulations and real data examples (Beijing Housing), and show
 theoretical consistency of the Infinitesimal Jackknife covariance estimate.
 
-## Requirement
+## Requirements
 
 + Python 3.7
     + numpy 1.21.5
