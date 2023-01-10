@@ -1,6 +1,6 @@
 # The Infinitesimal Jackknife and Combinations of Models
 
-This repository contains the implementation for the paper "The Infinitesimal Jackknife and Combinations of Models" in Python.
+This repository contains the implementation for the paper ["The Infinitesimal Jackknife and Combinations of Models"](https://arxiv.org/abs/2209.00147) in Python.
 
 ## Summary of the paper
 
@@ -50,3 +50,17 @@ Follow the steps below in order to reproduce the results of this paper:
     + `python run_real.py`
     + `python run_comp.py`
 - Run jupyter notebooks `plot_real_result.ipynb` and `plot_sim_result.ipynb` to reproduce the plots in this paper.
+
+## Citation
+ 
+Please cite our paper
+["The Infinitesimal Jackknife and Combinations of Models"](https://arxiv.org/abs/2209.00147) 
+
+``` 
+@article{ghosal2022infinitesimal,
+  title={The Infinitesimal Jackknife and Combinations of Models},
+  author={Ghosal, Indrayudh and Zhou, Yunzhe and Hooker, Giles},
+  journal={arXiv preprint arXiv:2209.00147},
+  year={2022}
+}
+``` 
